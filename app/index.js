@@ -19,11 +19,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 
-app.get('/', function (req, res) {
-    res.send('Hello!');
-});
-
 router(app);
 
 module.exports = server;
-console.log('Server started http://localhost:' + config.port);
+console.log('Server started on port:' + config.port);

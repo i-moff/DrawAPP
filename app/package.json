@@ -6,9 +6,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "init": "node scripts/init.js",
+    "update-api-docs": "node_modules/apidoc/bin/apidoc -i controllers/ -o ../apidoc"
   },
   "dependencies": {
+    "apidoc": "^0.17.6",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "cors": "^2.8.3",
